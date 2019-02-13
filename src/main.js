@@ -4,18 +4,20 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-// 引入vant
-import Vant from 'vant'
-// import 'vant/lib/index.css'
+import Vant from 'vant' // 引入vant
+import VueLazyLoad from 'vue-lazyload' // 引入懒加载
 
 Vue.config.productionTip = false
 
 Vue.use(Vant)
+Vue.use(VueLazyLoad, {})
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
