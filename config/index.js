@@ -52,6 +52,15 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
 
+    proxyTable: {
+      '/omsfront': {
+        target: 'http://10.1.190.228:8083/',
+        changeOrigin: false, //改变源
+        xfwd: true,
+        autoRewrite: true,
+      }
+    },
+
     /**
      * Source Maps
      */

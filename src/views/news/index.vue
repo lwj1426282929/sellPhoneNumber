@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import http from '@/http'
 export default {
   name: 'news',
 
@@ -19,6 +20,14 @@ export default {
       count: 0,
       news: []
     }
+  },
+
+  created () {
+    http.post('omsfront/orgReceive/queryReceiveTaking', { time: '123' }, { params: { asd: '123123' } }, { headers: { token: '123' } }).then(res => {
+      console.log(res)
+    }).catch(error => {
+      console.log('返回错误', error)
+    })
   },
 
   methods: {
@@ -50,8 +59,8 @@ export default {
 
 <style lang="less">
 .news {
-  .new-item{
-    .van-cell__right-icon{
+  .new-item {
+    .van-cell__right-icon {
       display: none;
     }
   }
