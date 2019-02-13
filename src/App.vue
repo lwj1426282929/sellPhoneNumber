@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <router-view />
+    <tabbar />
   </div>
 </template>
 
 <script>
+import { tabbar } from '@/components'
+
 export default {
-  name: 'App'
+  name: 'App',
+
+  components: {
+    tabbar
+  }
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
