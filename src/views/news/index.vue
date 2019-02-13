@@ -1,15 +1,15 @@
 <template>
-  <div class="information">
-    <van-nav-bar title="本站动态" right-text=">" left-arrow @click-left="onClickLeft" @click-right="onClickRight" />
+  <div class="news">
+    <van-nav-bar fixed title="本站动态" right-text="..." left-arrow @click-left="onClickLeft" @click-right="onClickRight" />
     <van-list v-model="loading" :finished="finished" :error.sync="error" error-text="请求失败，点击重新加载" finished-text="没有更多了" @load="loadNews">
-      <van-cell v-for="(item, index) in news" :key="index" :title="item" />
+      <van-cell v-for="(item, index) in news" class="new-item" :key="index" :title="item" is-link />
     </van-list>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'information',
+  name: 'news',
 
   data () {
     return {
@@ -42,11 +42,18 @@ export default {
         for (let i = 0; i < 10; i++) { // 将加载的数据追加进去
           this.news.push(this.news.length + 1)
         }
-      }, 3000)
+      }, 100)
     }
   }
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
+.news {
+  .new-item{
+    .van-cell__right-icon{
+      display: none;
+    }
+  }
+}
 </style>

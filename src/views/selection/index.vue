@@ -1,6 +1,6 @@
 <template>
   <div class="selection">
-    <van-nav-bar @click-left="onClickLeft" @click-right="onClickRight" />
+    <van-nav-bar fixed @click-left="onClickLeft" @click-right="onClickRight" />
   </div>
 </template>
 

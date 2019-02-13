@@ -1,6 +1,6 @@
 <template>
   <div class="customer-service">
-    <van-nav-bar title="联系我们" right-text=">" left-arrow @click-left="onClickLeft" @click-right="onClickRight" />
+    <van-nav-bar fixed title="联系我们" right-text=">" left-arrow @click-left="onClickLeft" @click-right="onClickRight" />
   </div>
 </template>
 

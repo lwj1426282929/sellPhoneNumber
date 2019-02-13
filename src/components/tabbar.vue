@@ -33,3 +33,8 @@ export default {
 }
 </script>
 
+<style lang="less" scoped>
+.van-tabbar {
+  height: 60px;
+}
+</style>

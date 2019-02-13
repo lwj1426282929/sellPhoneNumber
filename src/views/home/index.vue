@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <van-nav-bar left-text="城市" @click-left="onClickLeft" @click-right="onClickRight">
+    <van-nav-bar left-text="城市" fixed @click-left="onClickLeft" @click-right="onClickRight">
       <span slot="left">城市&nbsp;<van-icon name="arrow-down" /></span>
     </van-nav-bar>
 

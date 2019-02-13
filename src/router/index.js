@@ -27,10 +27,10 @@ const routes = [
     component: () => import('@/views/customerService')
   },
   {
-    path: '/information',
-    name: 'information',
+    path: '/news',
+    name: 'news',
     meta: { title: '资讯', icon: '' },
-    component: () => import('@/views/information')
+    component: () => import('@/views/news')
   },
   {
     path: '/navigation',

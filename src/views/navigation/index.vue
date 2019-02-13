@@ -1,6 +1,6 @@
 <template>
   <div class="navigation">
-    <van-nav-bar title="导航" right-text=">" left-arrow @click-left="onClickLeft" @click-right="onClickRight" />
+    <van-nav-bar title="导航" fixed right-text="..." left-arrow @click-left="onClickLeft" @click-right="onClickRight" />
   </div>
 </template>
 
