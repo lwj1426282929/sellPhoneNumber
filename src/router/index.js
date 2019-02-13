@@ -5,7 +5,11 @@ Vue.use(Router)
 
 const routes = [
   {
-    path: '/',
+    path: '',
+    redirect: 'home'
+  },
+  {
+    path: '/home',
     name: 'home',
     meta: { title: '首页', icon: '' },
     component: () => import('@/views/home')
