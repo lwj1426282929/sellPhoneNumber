@@ -5,12 +5,10 @@ import App from './App'
 import router from './router'
 
 import Vant from 'vant' // 引入vant
-import VueLazyLoad from 'vue-lazyload' // 引入懒加载
 
 Vue.config.productionTip = false
 
 Vue.use(Vant)
-Vue.use(VueLazyLoad, {})
 
 /* eslint-disable no-new */
 new Vue({

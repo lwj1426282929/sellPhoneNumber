@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <van-nav-bar @click-left="onClickLeft" @click-right="onClickRight" />
+    <van-nav-bar left-text="城市" @click-left="onClickLeft" @click-right="onClickRight">
+      <span slot="left">城市&nbsp;<van-icon name="arrow-down" /></span>
+    </van-nav-bar>
 
     <van-swipe :autoplay="3000">
       <van-swipe-item v-for="(swiper, index) in swipers" :key="index">
@@ -37,6 +39,10 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import { Lazyload } from 'vant'
+Vue.use(Lazyload, {})
+
 export default {
   name: 'home',
 
@@ -75,7 +81,7 @@ export default {
   methods: {
     // 选择城市
     onClickLeft () {
-      this.$router.push({ name: 'cities' })
+      // this.$router.push({ name: 'cities' })
     },
 
     // 进入导航
@@ -87,9 +93,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-@blue: blue;
 .home {
-  color: @blue;
   .van-swipe {
     height: 200px;
   }

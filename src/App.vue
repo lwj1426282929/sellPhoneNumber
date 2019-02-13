@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view />
+    <router-view class="page-container" />
     <tabbar />
   </div>
 </template>
@@ -21,5 +21,8 @@ export default {
  @import './style/reset.less';
  @import './style/index.less';
  @import 'vant/lib/index.css';
+ .page-container{
+   margin-bottom: 50px;
+ }
 </style>
 
