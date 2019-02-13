@@ -20,5 +20,6 @@ export default {
 <style lang="less">
  @import './style/reset.less';
  @import './style/index.less';
+ @import 'vant/lib/index.css';
 </style>
 

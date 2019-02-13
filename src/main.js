@@ -6,7 +6,7 @@ import router from './router'
 
 // 引入vant
 import Vant from 'vant'
-import 'vant/lib/index.css'
+// import 'vant/lib/index.css'
 
 Vue.config.productionTip = false
 

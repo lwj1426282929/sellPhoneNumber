@@ -11,6 +11,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "amfe-flexible": "^2.2.1",
+    "px-to-rem-loader": "^1.0.1",
     "vant": "^1.4.10",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
