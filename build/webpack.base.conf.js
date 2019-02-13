@@ -78,28 +78,6 @@ module.exports = {
       {
         test: /\.less$/,
         loader: "style-loader!css-loader!less-loader"
-      },
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: 'style-loader'
-          },
-          {
-            loader: 'css-loader'
-          },
-          {
-            loader: 'less-loader'
-          },
-          {
-            loader: 'px-to-rem-loader',
-            options: {
-              dpr: 2,
-              rem: 750,
-              exclude: ['background-size']
-            }
-          }
-        ]
       }
     ]
   },
