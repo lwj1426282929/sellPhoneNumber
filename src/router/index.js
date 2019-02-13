@@ -37,6 +37,13 @@ const routes = [
     name: 'navigation',
     meta: { title: '导航', icon: '' },
     component: () => import('@/views/navigation')
+  },
+
+  {
+    path: '/new/newItem',
+    name: 'newItem',
+    meta: {},
+    component: () => import('@/views/news/newItem')
   }
 ]
 

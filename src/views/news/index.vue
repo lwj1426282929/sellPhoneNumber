@@ -2,7 +2,7 @@
   <div class="news">
     <van-nav-bar fixed title="本站动态" right-text="..." left-arrow @click-left="onClickLeft" @click-right="onClickRight" />
     <van-list v-model="loading" :finished="finished" :error.sync="error" error-text="请求失败，点击重新加载" finished-text="没有更多了" @load="loadNews">
-      <van-cell v-for="(item, index) in news" class="new-item" :key="index" :title="item" is-link />
+      <van-cell v-for="(item, index) in news" class="new-item" :key="index" :title="item" is-link :to="computeNewUrl(item)" />
     </van-list>
   </div>
 </template>
@@ -41,7 +41,7 @@ export default {
       this.$router.push({ name: 'navigation' })
     },
 
-    // 下拉加载
+    // 下拉加载更多
     loadNews () {
       setTimeout(() => {
         this.loading = false // 加载状态结束
@@ -52,6 +52,11 @@ export default {
           this.news.push(this.news.length + 1)
         }
       }, 100)
+    },
+
+    // 返回资讯地址
+    computeNewUrl (item) {
+      return { name: 'newItem', query: { id: item } }
     }
   }
 }
