@@ -24,9 +24,6 @@
         <p class="number-types-name">{{ item.name }}</p>
       </van-col>
     </van-row>
-    <svg-icon name="search" scale="20"/>
-
-    <svg-icon name="zixun" scale="1"/>
 
     <van-row class="row-title">今日推荐</van-row>
     <van-row class="hot-numbers">
