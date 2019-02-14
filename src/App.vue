@@ -22,7 +22,6 @@ export default {
  @import './style/index.less';
  @import 'vant/lib/index.css';
  .page-container{
-   margin: 50px 0 70px 0;
+   margin: 1rem 0 1rem 0;
  }
 </style>
-
