@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 
 import Vant from 'vant' // 引入vant
+import svgIcon from 'vue-svg-icon/Icon' // 引入vue-svg-icon组件
+Vue.component('svg-icon', svgIcon)
 
 Vue.config.productionTip = false
 

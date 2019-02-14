@@ -60,6 +60,7 @@
     "vue-lazyload": "^1.2.6",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
+    "vue-svg-icon": "^1.2.9",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",

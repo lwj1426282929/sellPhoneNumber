@@ -5,14 +5,6 @@ body {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-// 行标题样式
-.row-title {
-  height: 0.7rem;
-  line-height: 0.7rem;
-  text-align: center;
-  background: #ececec;
-}
-
 .align-left {
   text-align: left;
 }
@@ -27,4 +19,48 @@ body {
 
 .float-right {
   float: right;
+}
+
+// 行标题样式
+.row-title {
+  height: 0.7rem;
+  line-height: 0.7rem;
+  text-align: center;
+  background: #ececec;
+}
+
+.nav-search {
+  padding: 0.1rem;
+
+  .nav-search-container {
+    position: relative;
+    height: 0.6rem;
+    border: 1px solid #d3d3d3;
+    overflow: hidden;
+    border-radius: 0.32rem;
+
+    .nav-search-icon {
+      position: absolute;
+      top: 50%;
+      left: 0.15rem;
+      transform: translateY(-50%);
+      color: #666;
+    }
+
+    .nav-search-input {
+      position: absolute;
+      top: 50%;
+      left: 0.55rem;
+      height: 100%;
+      border: 0 none;
+      transform: translateY(-50%);
+      font-size: 0.28rem;
+
+      &::-webkit-input-placeholder,
+      &:-moz-placeholder,
+      &:-ms-input-placeholder {
+        color: #666;
+      }
+    }
+  }
 }
