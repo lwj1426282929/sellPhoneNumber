@@ -56,7 +56,7 @@ export default {
 
     // 返回资讯地址
     computeNewUrl (item) {
-      return { name: 'newItem', query: { id: item } }
+      return { name: 'newsItem', query: { id: item } }
     }
   }
 }

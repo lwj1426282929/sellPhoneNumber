@@ -40,8 +40,8 @@ const routes = [
   },
 
   {
-    path: '/new/newItem',
-    name: 'newItem',
+    path: '/news/newItem',
+    name: 'newsItem',
     meta: {},
     component: () => import('@/views/news/newItem')
   }
