@@ -10,6 +10,7 @@
           <input type="text" class="nav-search-input" v-model="searchText" placeholder="输入关键字">
         </div>
       </div>
+      <svg-icon slot="right" class="nav-more" name="gengduo" scale="2.8" />
     </van-nav-bar>
 
     <van-swipe :autoplay="3000">
